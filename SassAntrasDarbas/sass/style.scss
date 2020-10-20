@@ -1,0 +1,39 @@
+@import 'kintamieji';
+
+
+.container {
+    background-color: $backgroundcolor;
+    height: 300px;
+    @include centravimas;
+    section {
+        background-color: $sectioncolor;
+        height: 80%;
+        width: 90%;
+        h2{
+            height: 15%;
+            @include centravimas;
+            @include border;
+        }
+        ul{
+            background-color: $ulcolor;
+            margin-left: 10px;
+            padding-inline-start: 0px;
+
+            
+            li{
+                @include borderbottom;
+                list-style: none;
+                height: 29px;
+                
+                span{
+                    float: right;
+                    background: black;
+                    height: 100px;
+                    width: 100px;
+                }
+                
+            }
+        }
+
+    }
+}
